@@ -1,0 +1,289 @@
+@media only screen and (max-width: 830px) {
+
+    .header {
+        justify-content: flex-start;
+        padding-inline: 0px !important;
+    }
+
+    .header .headerLeft i {
+        display: flex !important;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+
+    .header .nav {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        margin-top: 105px;
+        background-color: var(--bg);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .header .nav-active {
+        transition: .3s ease-out;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header .nav .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: initial;
+    }
+
+    .header .nav .menu li {
+        padding: 15px 30px;
+        border-top: 1px solid rgb(255, 255, 255, .2);
+    }
+
+    .header .nav .menu li a::after {
+        background-color: rgb(255, 255, 255, .1);
+    }
+
+    .header .outline {
+        margin-right: 10px;
+    }
+    .header .outline span {
+      max-width: 60px !important;
+    }
+
+    .header .v-divider {
+        display: none;
+    }
+
+    .header .create-butt {
+        display: none !important;
+    }
+
+
+    .home {
+        flex-direction: column;
+        padding-block: 30vh;
+        gap: 140px;
+    }
+    .home > div {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    .home>div:nth-child(2) {
+        display: none;
+    }
+    .home>div:nth-child(2) > div {
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    .home .code {
+        width: 90% !important;
+        pointer-events: none;
+    }
+
+    .home .code:nth-child(1) {
+      top: -80px !important;
+      right: 50% !important;
+      transform: translateX(50%);
+    }
+    .home .code:nth-child(2) {
+      top: 50% !important;
+      right: 50% !important;
+      transform: translate(50%, -50%) !important;
+    }
+    .home .code:nth-child(3) {
+      bottom: -80px !important;
+      right: 50% !important;
+      transform: translateX(50%);
+    }
+
+    .home .title {
+        width: 100% !important;
+        font-size: 2.4em !important;
+        line-height: 50px !important;
+    }
+    .home .subtitle {
+        width: 100% !important;
+        font-size: 1em !important;
+    }
+    .home .buttcont-home {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .community-cards > div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .section {
+        padding: 40px 0 !important;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .table-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .library-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .tab-resources .card .text {
+        width: 100%;
+    }
+    .tab-resources .card .description {
+        width: 100%;
+    }
+
+    .tab-dashboard > .card {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 30px !important;
+    }
+    .tab-dashboard > div > div:nth-child(1) {
+      width: 100% !important;
+    }
+
+    .table-components>.card-components {
+        width: 100%;
+        padding: 0 !important;
+    }
+    .toolbar .device-views,
+    .toolbar .butt-black {
+        display: none;
+    }
+
+    .user-page .footer-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .input-cont-css {
+      width: 100%;
+    }
+    .align-input-cont {
+        flex-direction: column;
+    }
+    .show {
+        margin: 0 !important;
+    }
+
+    .signup > div,
+    .login > div {
+      width: 300px;
+    }
+
+    .popup > div {
+        width: 90%;
+    }
+    .popup > div#send {
+        width: 340px !important;
+    }    
+    .popup > div#search {
+        width: 85% !important;
+    }
+
+    .code .snippetCode code {
+        white-space: break-spaces;
+    }
+    
+    .cards-components .card .toolbar {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .cards-components .card .toolbar > div:nth-child(1) {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 99%;
+    }
+    .cards-components .card .toolbar > div:nth-child(2) {
+        display: none;
+    }
+    .cards-components .card .toolbar .options {
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+    .cards-components .card .toolbar .options > div {
+      width: 50%;
+    }
+    .cards-components .card .toolbar .options label {
+      width: 100%;
+    }
+
+    .social-cont {
+        margin-top: -20px;
+        justify-content: space-between;
+    }
+    .social-cont li,
+    .social-cont li a {
+        width: fit-content;
+        justify-content: flex-start;
+    }
+    .social-cont li span {
+        display: none;
+    }
+
+    .more-butt {
+        display: flex;
+        padding: 20px;
+    }
+    .more-menu {
+        position: fixed;
+        flex-direction: column;
+        gap: 10px !important;
+        background-color: var(--dark);
+        box-shadow: 0 0 8px 5px rgb(0, 0, 0, .2);
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 10000;
+        transform-origin: top right;
+        animation: more-menu .3s;
+    }
+    @keyframes more-menu {
+        0% { opacity: 0; transform: scale(0); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    .more-menu .butt-outline {
+        outline: none;
+        justify-content: flex-start;
+        padding-inline: 15px;
+    }
+    .hidden-menu {
+        display: none !important;
+    }
+
+    .footer-css h4 {
+        width: 90% !important;
+    }
+
+    .resources-butt,
+    .licence-butt {
+        display: block !important;
+    }
+
+    .user-page .footer-card .created-component {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .resources-butt,
+    .licence-butt {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+<?php
+
+    if($_SERVER['HTTP_HOST'] == 'localhost') {
+
+      $username_db = "root";
+      $password_db= "";
+      $db_name = "boxcoding";
+      $host = "localhost";
+
+    } else {
+
+      $username_db = "h1015089_user01";
+      $password_db= "fhKf9?738";
+      $db_name = "h1015089_boxcoding";
+      $host = "localhost";
+
+    }
+
+?>
+
+
+tbl_user
+id, username_us, email_us, password_us, id_us, premium_us (0/1)
+
+tbl_saved
+id, id_item, id_us, date_saved
+
+tbl_elements
+id, id_elem (el-123), name_el, description_el, image_el (image/id_elem.png), category_id, preview_el (0/1), preview_size (w x h), html_text, css_text, javascript_text 
+
+tbl_templates
+id, id_templ (tp-123), name_tp, description_tp, image_tp (image/id_templ.png), category_id, file_tp (templ/id_templ), link_tp, price_tp
+
+tbl_category
+id, name_category

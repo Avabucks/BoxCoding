@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1024px) {
+    header {
+        justify-content: flex-start;
+    }
+    header .headerLeft i {
+        display: flex;
+        margin-left: 25px;
+    } 
+    header .nav {
+        position: fixed;
+        z-index: 1001;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+        background-color: rgb(var(--bg-color));
+        transform: translateX(-100%);
+    }
+    header .nav-active {
+        transition: .3s ease-out;
+        transform: translateX(0);
+    }
+
+    header .nav .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: initial;
+    }
+    header .nav .menu li {
+        padding: 15px 30px;
+        border-top: 1px solid rgb(var(--text-color), .2);
+    }
+
+    section {
+        height: auto !important;
+        padding: 30px 0;
+    }
+    section .divSection {
+        width: 100vw;
+        height: auto;
+    }
+    .contHome {
+        width: 300px;
+        margin-top: 50px;
+    }
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+    .contAbout {
+        width: 300px;
+    }
+
+    .skillsCont {
+        width: 300px;
+    }
+
+    #tools .divSection {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 300px;
+    }
+
+    #portfolio .divSection {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 40px;
+        align-content: center;
+    }
+
+}
